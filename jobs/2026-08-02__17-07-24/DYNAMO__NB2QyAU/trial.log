@@ -1,0 +1,17 @@
+Skipping image OS validation for hb__2462a2ef5e2956608abc09725f9e0472: docker inspect returned 1
+Collecting main service artifacts
+Failed to download artifact '/app/report.json' from service 'main' (best-effort)
+Traceback (most recent call last):
+  File "/home/techbrew97/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/trial/artifact_handler.py", line 330, in _download_artifact
+    await source_env.service_download_file(
+  File "/home/techbrew97/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 1052, in service_download_file
+    await self.download_file(source_path, target_path)
+  File "/home/techbrew97/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 1037, in download_file
+    await self._platform.download_file(source_path, target_path)
+  File "/home/techbrew97/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker_unix.py", line 185, in download_file
+    await self._env._run_docker_compose_command(
+  File "/home/techbrew97/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 656, in _run_docker_compose_command
+    raise RuntimeError(
+RuntimeError: Docker compose command failed for environment log-report. Command: docker compose --project-name dynamo__nb2qyau__env --project-directory /home/techbrew97/Documents/AI_&_STUFFS/DYNAMO/environment -f /tmp/tmp5batg91a/DYNAMO__NB2QyAU__env-docker-compose-resources.json -f /home/techbrew97/.local/share/uv/tools/harbor/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml -f /tmp/tmpcdsadggo/docker-compose-environment.json -f /tmp/tmptjleew2e/docker-compose-mounts.json cp main:/app/report.json jobs/2026-08-02__17-07-24/DYNAMO__NB2QyAU/artifacts/app/report.json. Return code: 1. Stdout:  dynamo__nb2qyau__env-main-1 Copying dynamo__nb2qyau__env-main-1:/app/report.json to jobs/2026-08-02__17-07-24/DYNAMO__NB2QyAU/artifacts/app/report.json
+Error response from daemon: Could not find the file /app/report.json in container 81449fc1df215652aadcf72f9b4acd9b2576c00be524c49f6a404b2b80421a43
+. Stderr: None. 

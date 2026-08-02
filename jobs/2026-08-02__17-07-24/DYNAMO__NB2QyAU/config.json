@@ -1,0 +1,11 @@
+{
+    "task": {
+        "path": "."
+    },
+    "trial_name": "DYNAMO__NB2QyAU",
+    "trials_dir": "jobs/2026-08-02__17-07-24",
+    "agent": {
+        "name": "nop"
+    },
+    "job_id": "d0f55e61-1ac2-44e8-ad37-8c964cadefa3"
+}
